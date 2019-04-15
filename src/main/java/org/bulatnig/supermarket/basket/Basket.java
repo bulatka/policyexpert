@@ -1,4 +1,4 @@
-package org.bulatnig.supermarket;
+package org.bulatnig.supermarket.basket;
 
 import org.bulatnig.supermarket.product.Product;
 
