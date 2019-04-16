@@ -43,3 +43,14 @@ list.
 About Java Money issue. I know that you shouldn't use float or double for monetary or
 precise calculations. I store and calculate prices in pence using int. Conversion to
 pounds may happen right before the output.
+
+I didn't think much about immutability, because most of the object should be serializable
+using some ORM probably. I could make Basket immutable, but we may want to serialize and
+store it somewhere too.
+
+Also I didn't write tests to check price and more importantly discount calculation.
+
+Code also lacks logging completely.
+
+Probably having integer quantity for both enumerable and wighed products isn't a good idea.
+But I already put a lot of thought into this design. I hope it should be enough for assessment.
