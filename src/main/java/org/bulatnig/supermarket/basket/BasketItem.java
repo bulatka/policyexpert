@@ -8,6 +8,13 @@ public class BasketItem {
     private int quantity;
     private int itemPrice;
 
+    public BasketItem(Product product, int productPrice, int quantity, int itemPrice) {
+        this.product = product;
+        this.productPrice = productPrice;
+        this.quantity = quantity;
+        this.itemPrice = itemPrice;
+    }
+
     public Product getProduct() {
         return product;
     }

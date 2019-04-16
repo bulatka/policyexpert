@@ -5,8 +5,10 @@ public class MultibuyDiscount extends SingleProductDiscount {
     private int discountQuantity;
     private int discountPrice;
 
-    public MultibuyDiscount() {
-        super(Type.MULTIBUY);
+    public MultibuyDiscount(Long productId, int discountQuantity, int discountPrice) {
+        super(Type.MULTIBUY, productId);
+        this.discountQuantity = discountQuantity;
+        this.discountPrice = discountPrice;
     }
 
     @Override

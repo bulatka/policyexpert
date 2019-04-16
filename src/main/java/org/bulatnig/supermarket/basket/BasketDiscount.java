@@ -7,6 +7,11 @@ public class BasketDiscount {
     private Discount discount;
     private int appliedDiscountInPence;
 
+    public BasketDiscount(Discount discount, int appliedDiscountInPence) {
+        this.discount = discount;
+        this.appliedDiscountInPence = appliedDiscountInPence;
+    }
+
     public Discount getDiscount() {
         return discount;
     }

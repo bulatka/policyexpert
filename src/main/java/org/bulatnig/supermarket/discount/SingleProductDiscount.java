@@ -12,8 +12,9 @@ public abstract class SingleProductDiscount extends Discount {
 
     private Long productId;
 
-    public SingleProductDiscount(Type type) {
+    public SingleProductDiscount(Type type, Long productId) {
         super(type);
+        this.productId = productId;
     }
 
     @Override

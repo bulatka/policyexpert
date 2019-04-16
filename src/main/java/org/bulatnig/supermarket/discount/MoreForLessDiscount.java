@@ -5,8 +5,10 @@ public class MoreForLessDiscount extends SingleProductDiscount {
     private int moreCount;
     private int lessCount;
 
-    public MoreForLessDiscount() {
-        super(Type.MORE_FOR_LESS);
+    public MoreForLessDiscount(Long productId, int moreCount, int lessCount) {
+        super(Type.MORE_FOR_LESS, productId);
+        this.moreCount = moreCount;
+        this.lessCount = lessCount;
     }
 
     @Override
