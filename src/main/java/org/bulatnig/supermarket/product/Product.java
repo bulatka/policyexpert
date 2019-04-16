@@ -1,10 +1,20 @@
 package org.bulatnig.supermarket.product;
 
-public class Product {
+public abstract class Product {
 
+    private final Type type;
     private Long id;
-    private Type type;
     private String name;
+
+    public Product(Type type) {
+        this.type = type;
+    }
+
+    public abstract int calculatePrice(int quantity, int pencePerItem);
+
+    public Type getType() {
+        return type;
+    }
 
     public Long getId() {
         return id;
@@ -12,14 +22,6 @@ public class Product {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public Type getType() {
-        return type;
-    }
-
-    public void setType(Type type) {
-        this.type = type;
     }
 
     public String getName() {

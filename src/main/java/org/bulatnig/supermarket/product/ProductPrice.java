@@ -3,7 +3,7 @@ package org.bulatnig.supermarket.product;
 public class ProductPrice {
 
     private Long productId;
-    private int price;
+    private int priceInPence;
 
     public Long getProductId() {
         return productId;
@@ -13,11 +13,11 @@ public class ProductPrice {
         this.productId = productId;
     }
 
-    public int getPrice() {
-        return price;
+    public int getPriceInPence() {
+        return priceInPence;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
+    public void setPriceInPence(int priceInPence) {
+        this.priceInPence = priceInPence;
     }
 }
